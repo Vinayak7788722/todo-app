@@ -3,7 +3,7 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static('public')); // for CSS
+app.use(express.static('views')); // for CSS
 let items = [];
 
 app.get("/", function (req, res) {
